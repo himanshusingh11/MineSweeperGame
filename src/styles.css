@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.grid {
+  width: 300px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  border-right: 1px solid black;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.cell.clicked {
+  background-color: lightblue;
+}
+
+.cell.bomb.clicked {
+  background-color: red;
+  color: white;
+}
+
+.cell.diamond.clicked {
+  background-color: green;
+  color: white;
+}
+
+.status {
+  font-size: 18px;
+  margin: 20px;
+}
